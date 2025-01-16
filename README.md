@@ -37,6 +37,10 @@ This project allows you to generate images using the Stability AI's Stable Diffu
       files.download("/content/generated_image.png")
       ```
 
+6.  **Output:**
+         
+![Output](https://github.com/user-attachments/assets/1c41c318-e63f-48b1-b51a-572fe36a01cb)
+
 ## Usage Example
 
 1. Run the script and enter a prompt when asked. For example:
