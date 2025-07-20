@@ -7,7 +7,7 @@ from PIL import Image
 
 # Load environment variables
 load_dotenv()
-A4F_API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY")
 BASE_URL = os.getenv("BASE_URL")
 
 # Streamlit UI
@@ -20,14 +20,14 @@ prompt = st.text_area("Enter your Imagination:", placeholder="e.g. A photorealis
 
 # Image Generation
 if st.button("Generate Image"):
-    if not A4F_API_KEY or not BASE_URL:
+    if not API_KEY or not BASE_URL:
         st.error("Missing API key or base URL in the .env file.")
     elif not prompt:
         st.warning("Please enter a prompt.")
     else:
         with st.spinner("Generating image..."):
             headers = {
-                "Authorization": f"Bearer {A4F_API_KEY}",
+                "Authorization": f"Bearer {API_KEY}",
                 "Content-Type": "application/json"
             }
 
