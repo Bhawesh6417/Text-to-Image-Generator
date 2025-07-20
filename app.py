@@ -7,8 +7,8 @@ from PIL import Image
 
 # Load environment variables
 load_dotenv()
-A4F_API_KEY = os.getenv("A4F_API_KEY")
-BASE_URL = os.getenv("A4F_BASE_URL")
+A4F_API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
 
 # Streamlit UI
 st.set_page_config(page_title="Image Generator", layout="centered")
